@@ -1,3 +1,5 @@
+#Lab 2b Task 1:convert decimal to degrees
+
 # Write your hms2dec and dms2dec functions here
 def hms2dec( h, m, s):
   

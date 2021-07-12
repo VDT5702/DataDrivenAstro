@@ -1,3 +1,5 @@
+#Lab 2b Task 4: Look around you
+
 import numpy as np
 
 #hms2dec definition
@@ -27,17 +29,6 @@ def import_bss():
   
   return(tup_bss)
 
-def import_super():
-  
-  cat = np.loadtxt('super.csv', delimiter=',', skiprows=1, usecols=[0, 1])
-  
-  tup_super=[]
-  
-  for i in range(len(cat)):
-    tup_super.append((i+1,cat[i][0],cat[i][1]))  
-    
-  return (tup_super)
- 
 def angular_dist(ra1, dec1, ra2, dec2):
   lst= [ra1,dec1,ra2,dec2]
   ra1,dec1,ra2,dec2=np.radians(lst)
@@ -66,42 +57,15 @@ def find_closest(cat, asc, dec):
   return(id_min,d_min)
 
 
-# Write your crossmatch function here.
-def  crossmatch(bss_cat, super_cat, max_dist):
-  
-  lst_matches=[]
-  lst_no_matches=[]
-  for i in bss_cat:
-    
-    id_min,d_min=find_closest(super_cat,i[1],i[2])
-    
-    if d_min < max_dist:
-      lst_matches.append((i[0],id_min,d_min))
-    
-    else:
-      lst_no_matches.append(i[0])  
-  
-  return (lst_matches,lst_no_matches)
-
-
 
 # You can use this to test your function.
 # Any code inside this `if` statement will be ignored by the automarker.
 if __name__ == '__main__':
-  bss_cat = import_bss()
-  super_cat = import_super()
-
-  # First example in the question
-  max_dist = 40/3600
-  matches, no_matches = crossmatch(bss_cat, super_cat, max_dist)
-  print(matches[:3])
-  print(no_matches[:3])
-  print(len(no_matches))
+  cat = import_bss()
+  
+  # First example from the question
+  print(find_closest(cat, 175.3, -32.5))
 
   # Second example in the question
-  max_dist = 5/3600
-  matches, no_matches = crossmatch(bss_cat, super_cat, max_dist)
-  print(matches[:3])
-  print(no_matches[:3])
-  print(len(no_matches))
+  print(find_closest(cat, 32.2, 40.7))
 

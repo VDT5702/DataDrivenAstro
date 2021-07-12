@@ -1,3 +1,5 @@
+#Lab 2a Task4:  Calculation of median using binapprox algorithm
+
 import math
 import numpy as np
 

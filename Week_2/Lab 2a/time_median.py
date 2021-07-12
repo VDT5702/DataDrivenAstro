@@ -1,3 +1,5 @@
+#Lab 2a Task2: Time taken to calculate median
+
 import numpy as np
 import statistics
 import time

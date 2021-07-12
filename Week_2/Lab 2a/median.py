@@ -1,3 +1,5 @@
+#Lab 2a Task 1:Mean vs Median
+
 # Write your list_stats function here.
 def list_stats(lst):
   

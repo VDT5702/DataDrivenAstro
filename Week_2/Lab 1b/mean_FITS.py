@@ -1,3 +1,5 @@
+#Lab 1b Task 5: mean of set of FITS
+
 from astropy.io import fits 
 import numpy as np
 

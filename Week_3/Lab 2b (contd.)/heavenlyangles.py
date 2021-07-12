@@ -1,3 +1,5 @@
+#Lab 2b Task1: Heavenly Angles
+
 import numpy as np
 # Write your angular_dist function here.
 def angular_dist(ra1, dec1, ra2, dec2):

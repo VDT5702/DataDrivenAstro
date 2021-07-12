@@ -1,3 +1,5 @@
+#Lab 1b Task 3: Mean of a set of signals
+
 import numpy as np
 # Write your mean_datasets function here
 

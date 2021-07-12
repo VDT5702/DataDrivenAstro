@@ -1,3 +1,5 @@
+#Lab 2b Task 3: Playing woth space cats
+
 import numpy as np
 
 #hms2dec definition

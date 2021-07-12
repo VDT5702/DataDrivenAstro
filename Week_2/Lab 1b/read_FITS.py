@@ -1,3 +1,5 @@
+#Lab 1b Task4: Read a FITS file
+
 # Write your load_fits function here.
 def load_fits(iname):
   from astropy.io import fits

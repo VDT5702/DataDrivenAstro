@@ -1,3 +1,5 @@
+#Lab 1b Task 1: Mean of a list
+
 # Write your calculate_mean function here.
 def calculate_mean(ar):
   m=sum(ar)/len(ar)

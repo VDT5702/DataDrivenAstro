@@ -1,3 +1,5 @@
+#Lab 2a Task3: Cost of calculation of median
+
 import numpy as np
 import time
 from astropy.io import fits

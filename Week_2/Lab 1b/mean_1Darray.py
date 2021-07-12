@@ -1,3 +1,5 @@
+# Lab 1b Task2: Mean of 1-D array
+
 import numpy as np
 # Write your calc_stats function here.
 def calc_stats(fname):
