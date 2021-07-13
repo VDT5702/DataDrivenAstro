@@ -4,7 +4,7 @@ Link to the Project Report:  https://tinyurl.com/AstronomicalDataModeling
 
 This is a GitHub repository for the SOC Project "Astronomical Data Modelling and Interpretaion"
 
-The structure of the repo is easy to understand:
+The structure of the repo is divided on the basis of weeks from when the project was started:
 
   1) Week_1 
       - Three assignments given to understand the basics of python
